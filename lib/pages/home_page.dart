@@ -21,6 +21,8 @@ import 'package:string_validator/string_validator.dart';
 class HomePage extends StatelessWidget {
   HomePage({super.key});
 
+  String serverIP = "YOUR_SERVER_IP";
+
   TextEditingController newEventNameController = TextEditingController();
   TextEditingController newEventPriceController = TextEditingController();
 
@@ -93,7 +95,7 @@ class HomePage extends StatelessWidget {
 
                     VlcPlayerController newcontroller =
                         VlcPlayerController.network(
-                      "rtmp://79.174.95.191:1935/${event['adminID']}/live",
+                      "rtmp://${serverIP}:1935/${event['adminID']}/live",
                       hwAcc: HwAcc.auto,
                       autoPlay: true,
                       options: VlcPlayerOptions(),
@@ -215,7 +217,7 @@ class HomePage extends StatelessWidget {
                                 onTap: () {
                                   VlcPlayerController newcontroller =
                                       VlcPlayerController.network(
-                                    "rtmp://79.174.95.191:1935/${event['adminID']}/live",
+                                    "rtmp://${serverIP}:1935/${event['adminID']}/live",
                                     hwAcc: HwAcc.auto,
                                     autoPlay: true,
                                     options: VlcPlayerOptions(),
