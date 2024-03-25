@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "6798105449",
+    "project_id": "payperview-bc36c",
+    "storage_bucket": "payperview-bc36c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:6798105449:android:365b0d2ec16d583cddfbf8",
+        "android_client_info": {
+          "package_name": "com.example.pay_per_view"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCTj7-FAJfPOmjavUxHM-X0hqpLnM-_5QM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
